@@ -148,6 +148,14 @@ header nav .contact_section li:nth-child(2)  {
 
       position: relative;
       width: 40%;
+      padding: 10px;
+      border: 1px solid #000;
+
+  }
+  section.img_box{
+
+   
+      width: 60%;
 
   }
 
