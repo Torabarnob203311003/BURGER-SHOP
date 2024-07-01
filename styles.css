@@ -10,7 +10,7 @@
 
 
  html {
-            font-family:'Times New Roman', Times, serif;
+            font-family:'Poppins',sans-serif;
  }
 header{
 
@@ -191,14 +191,63 @@ section .content h1{
 
  font-size: 65px;
  
- letter-spacing: -px;;
- line-height: 55px;
+ letter-spacing: -2px;;
+ line-height: 65px;
 }
 
-section.content .img_icon img{
 
-  height: 22px;
-    margin-top: 12px;
+
+section .content h6{
+margin-top: 20px;
+color: gray;
+margin-bottom: 15px;
+font-size: 18px;
+
+
 }
+
+
+.order_rate{
+
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  
+}
+
+.order_rate a {
+margin-right: 5px;
+background: #000;
+border-radius: 10px;
+padding: 7px 15px;
+color: #fff;
+text-decoration: none;
+font-weight: 900;
+/* z-index: 20px; */
+
+font-size: 13px;
+transition: .3s linear;
+}
+.order_rate a:hover {
+background: #00a549;
+
+}
+.order_rate h2 {
+color: #00a549;
+margin-left: 20px;
+font-size: 30px;
+font-weight:900;
+
+}
+.order_rate h2 sup{
+margin-left: 5px;
+color: #a3ca72;
+font-size: 16px;
+font-weight: 900;
+position:relative ;
+top: -5px;
+}
+
+
 
  /* section ends */
