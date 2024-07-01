@@ -133,3 +133,24 @@ header nav .contact_section li:nth-child(2)  {
 
 
 }
+
+ /* section starts */
+ section {
+
+    width:80%;
+    border: 1px solid #000;
+    margin:auto;
+    margin-top:20px;
+
+ }
+
+  section.content, .img_box{
+
+      position: relative;
+      width: 40%;
+
+  }
+
+
+
+ /* section ends */
