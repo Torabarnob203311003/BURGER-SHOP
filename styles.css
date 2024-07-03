@@ -388,7 +388,7 @@ font-weight: 900;
  /* section ends */
 
  .del{
-
+ /* padding-left: 5px; */
 width: 100%;
 margin: auto;
  height: auto;
@@ -396,6 +396,7 @@ margin: auto;
  padding :40px 10%;
  display: flex;
  align-items: center;
+ /* justify-content: center; */
  }
  .del .cont h1{
 font-weight: bold;
@@ -415,6 +416,12 @@ margin: 15px 0;
 
 
  }
+ /* .del .cont {
+
+
+margin-left: 15px;
+
+ } */
  .del .cont button{
 
 background: #00a950;
@@ -448,4 +455,98 @@ background: #000;
   width: 200px;
   transform: translateX(-70px) ;
  }
+ .food_chart{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ }
+ .food_chart .food_bx{
+
+
+  position:relative;
+  height: 450px;
+ 
+width: 30%;
+background: #00a950;
+padding: 60px 50px ;
+z-index: 2;
+
+}
+ .food_chart .food_bx:nth-child(2){
+
+
+  
+ 
+width: 40%;
+background: #ff8e27;
+
+
+
+}
+ .food_chart .food_bx:nth-child(3){
+
+background: #a1cf67;
+
+
+
+} 
+
+/* .food_chart .food_bx .cont {
+
+z-index: 2;
+position: relative;
+} */
+
+.food_chart .food_bx .cont h1{
+
+font-family: "bobblebod";
+font-size: 50px;
+ line-height: 50px;
+ color: #fff;
+ 
+
+
+}
+.food_chart .food_bx .cont p{
+color: #fff;
+font-size: 11px;
+margin-top: 18px;
+
+}
+.food_chart .food_bx .cont button{
+background: #000;
+  border-radius: 10px;
+  padding: 9px 15px;
+  color: #fff;
+  margin-top: 20px;
+
+  font-size: 13px;
+  font-family: "bobblebod";
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .3s linear;
+
+}
+.food_chart .food_bx .cont img{
+position: absolute;
+right: 0;
+top: 10%;
+width: 250px;
+z-index: -2;
+
+
+
+}
+.food_chart .food_bx:nth-child(2) img{
+position: absolute;
+right: 0;
+top: 10%;
+width: 290px;
+z-index: -2;
+
+
+
+}
+
 
