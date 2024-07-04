@@ -76,52 +76,43 @@ let icon_off=() =>{
 
     })
 }
-document.getElementsByClassName('bi bi-chevron-right')[0].addEventListener('click',() =>{
+document.getElementsByClassName('bi bi-chevron-right')[0].addEventListener('click',() => {
     index +=230;
     if(index >(len)-230){
         index=(len)-230;
-
-
     }
+
     document.getElementsByClassName('images')[0].scrollLeft=index;
     images_off();
-   document.getElementsByClassName('main_imgs')[index/230].style= "width:60%";
-   document.getElementsByClassName('main_imgs')[index/230].style.filter= "blur(0px)";
-   document.getElementsByClassName('title')[0].innerHTML=images_dt[index/230].title;
-  document.getElementsByClassName('price')[0].innerHTML = `${images_dt[index / 230].price} <sup><del>${images_dt[index / 230].MRP}</del></sup>`;
-  document.getElementById('calorie').innerText = images_dt[(index/230)].calorie;
-  document.getElementById('fat').innerText = images_dt[(index/230)].fat;
-  document.getElementById('protien').innerText = images_dt[(index/230)].protein;
-  icon_off();
-  (document.getElementsByClassName('pagi_img'))[index/230].style.transform ="scale(1.1)"
-  (document.getElementsByClassName('pagi_img'))[index/230].style.opacity = 1;
+    document.getElementsByClassName('main_imgs')[index/230].style= "width:60%";
+    document.getElementsByClassName('main_imgs')[index/230].style.filter= "blur(0px)";
+    document.getElementsByClassName('title')[0].innerHTML=images_dt[index/230].title;
+    document.getElementsByClassName('price')[0].innerHTML = `${images_dt[index / 230].price} <sup><del>${images_dt[index / 230].MRP}</del></sup>`;
+    document.getElementById('calorie').innerText = images_dt[(index/230)].calorie;
+    document.getElementById('fat').innerText = images_dt[(index/230)].fat;
+    document.getElementById('protien').innerText = images_dt[(index/230)].protein;
+    document.getElementsByClassName('pagi_img')[(index/230)].style.transform ="scale(1.1)";
+    document.getElementsByClassName('pagi_img')[(index/230)].style.opacity = 1;
+});
 
-
-
-})
-document.getElementsByClassName('bi bi-chevron-left')[0].addEventListener('click',() =>{
+document.getElementsByClassName('bi bi-chevron-left')[0].addEventListener('click',() => {
     index -=230;
-    if(index< 0){
-        index=0;
-
-
+    if(index < 0){
+        index =0;
     }
+
     document.getElementsByClassName('images')[0].scrollLeft=index;
     images_off();
-   document.getElementsByClassName('main_imgs')[index/230].style= "width:60%";
-   document.getElementsByClassName('main_imgs')[index/230].style.filter= "blur(0px)";
-   document.getElementsByClassName('title')[0].innerHTML=images_dt[index/230].title;
-  document.getElementsByClassName('price')[0].innerHTML = `${images_dt[index / 230].price} <sup><del>${images_dt[index / 230].MRP}</del></sup>`;
-  document.getElementById('calorie').innerText = images_dt[(index/230)].calorie;
-  document.getElementById('fat').innerText = images_dt[(index/230)].fat;
-  document.getElementById('protien').innerText = images_dt[(index/230)].protein;
-  icon_off();
-  (document.getElementsByClassName('pagi_img'))[index/230].style.transform ="scale(1.1)"
-  (document.getElementsByClassName('pagi_img'))[index/230].style.opacity = 1;
-
-
-
-})
+    document.getElementsByClassName('main_imgs')[index/230].style= "width:60%";
+    document.getElementsByClassName('main_imgs')[index/230].style.filter= "blur(0px)";
+    document.getElementsByClassName('title')[0].innerHTML=images_dt[index/230].title;
+    document.getElementsByClassName('price')[0].innerHTML = `${images_dt[index / 230].price} <sup><del>${images_dt[index / 230].MRP}</del></sup>`;
+    document.getElementById('calorie').innerText = images_dt[(index/230)].calorie;
+    document.getElementById('fat').innerText = images_dt[(index/230)].fat;
+    document.getElementById('protien').innerText = images_dt[(index/230)].protein;
+    document.getElementsByClassName('pagi_img')[(index/230)].style.transform ="scale(1.1)";
+    document.getElementsByClassName('pagi_img')[(index/230)].style.opacity = 1;
+});
 
 Array.from(document.getElementsByClassName('pagi_img')).forEach((el,i)=>{el.addEventListener('click',()=>{
 
@@ -137,8 +128,9 @@ Array.from(document.getElementsByClassName('pagi_img')).forEach((el,i)=>{el.addE
   document.getElementById('fat').innerText = images_dt[(index/230)].fat;
   document.getElementById('protien').innerText = images_dt[(index/230)].protein;
   icon_off();
-  (document.getElementsByClassName('pagi_img'))[index/230].style.transform ="scale(1.1)"
-  (document.getElementsByClassName('pagi_img'))[index/230].style.opacity = 1;
+ document.getElementsByClassName('pagi_img')[(index/230)].style.transform ="scale(1.1)"
+  document.getElementsByClassName('pagi_img')[(index/230)].style.opacity = 1;
+
 
 })
 
